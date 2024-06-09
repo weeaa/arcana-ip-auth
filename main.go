@@ -53,10 +53,6 @@ func run() error {
 		allowIpAddress(w, r, db)
 	})
 
-	router.Get("/panic", func(w http.ResponseWriter, r *http.Request) {
-		panic("freak")
-	})
-
 	certFile := "cert.pem"
 	keyFile := "key.pem"
 
